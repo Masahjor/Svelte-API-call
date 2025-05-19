@@ -3,15 +3,18 @@
     import '../app.css'
     import Header from './Header.svelte';
     import Main from './Main.svelte';
-    // import Footer from './Footer.svelte';
+    import Footer from './Footer.svelte';
 </script>
 
 <!-- ===== HTML ===== -->
-<main class="main-content">
+<main>
 
     <Header />
+    <!-- this solution sucks ass, but it will have to do for now -->
+    <div class="main-content">
     <Main />
-    <!-- <Footer /> -->
+    </div>
+    <Footer />
         
 </main>
 
