@@ -5,8 +5,6 @@
     import Main from './Main.svelte';
     import Footer from './Footer.svelte';
 
-    
-
 </script>
 
 
@@ -62,5 +60,22 @@
             margin: 0 auto;
     }
 
+    :global(button) {
+        background-color: green; /* GRØN */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+            background-color: lightgreen; /* JEG GRØNNER DEN */
+            color: black;
+        }
+    }
   }
  </style>
