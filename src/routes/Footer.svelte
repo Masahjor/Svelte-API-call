@@ -17,15 +17,16 @@
 
 <style>
     footer {
-        background-color: navy;
-        color: white;
+        background-color: limegreen;
+        color: black;
         padding: 1em;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* height: auto;
-        margin: auto;
-        text-align: center; */
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     
         & figure {
             margin: 0 auto; /* Center the figure element */
@@ -37,7 +38,6 @@
     .logo-pic {
         max-width: 100%; /* Ensure responsiveness */
         height: auto;
-        padding-bottom: 15px;
     }
 
 </style>

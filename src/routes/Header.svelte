@@ -1,9 +1,9 @@
 <!-- ===== Script ===== -->
  <script lang="ts">
     let sections = [
-        { title: "Section 1", content: "/" },
-        { title: "Section 2", content: "/content2" },
-        { title: "Section 3", content: "/content3" }
+        { name: "Section 1", path: "/" },
+        { name: "Section 2", path: "/content2" },
+        { name: "Section 3", path: "/content3" }
     ];
  </script>
 
@@ -32,18 +32,14 @@
 
 <style>
     header {
-        background-color: lime;
-        color: white;
+        background-color: limegreen;
+        color: black;
         padding: 1em;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* height: auto;
-        margin: auto;
-        text-align: center; */
     
         & figure {
-            margin: 0 auto; /* Center the figure element */
             display: inline-block; /* Ensure it doesn't stretch */
         }
     
@@ -52,7 +48,6 @@
     .logo-pic {
         max-width: 100%; /* Ensure responsiveness */
         height: auto;
-        padding-bottom: 15px;
     }
 
     nav ul {
@@ -67,11 +62,12 @@
     }
 
     nav ul li a {
-        color: white;
+        color: black;
         text-decoration: none;
     }
 
     nav ul li a:hover {
         text-decoration: underline;
+        color: yellow;
     }
 </style>

@@ -4,7 +4,11 @@
     import Header from './Header.svelte';
     import Main from './Main.svelte';
     import Footer from './Footer.svelte';
+
+    
+
 </script>
+
 
 <!-- ===== HTML ===== -->
 <main>
@@ -17,6 +21,7 @@
     <Footer />
         
 </main>
+
 
 <!-- ===== CSS ===== -->
  <style>
@@ -34,7 +39,7 @@
 
     :global(.grid-container) {
         display: grid;
-        background: hotpink;
+        background: lightgreen;
         grid-template-columns: repeat(3, 1fr); /* Two columns */
         gap: 1rem; /* Adjust gap as needed */
         width: 1000px; /* Full width */
