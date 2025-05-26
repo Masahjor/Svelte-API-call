@@ -12,7 +12,7 @@
         <div class="grid-item" style="grid-column: span 3;">
             <p>Welcome to SvelteKit, visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
             <h1>API get missekat</h1>
-            <button on:click={getKittens}>Get missekat</button>
+            <button on:click={getKittens}>Get missekat, check console</button>
         </div>
         <div class="grid-item" style="grid-column: span 3;">
             <img src="AlexLogo.png" alt="img">
