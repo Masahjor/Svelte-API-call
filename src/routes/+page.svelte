@@ -52,7 +52,6 @@
         border-radius: 5px; /* Rounded corners */
         border-style: solid;
 
-
         & img {
             max-width: 100%;
             height: auto;
@@ -72,6 +71,7 @@
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 5px;
+        
         &:hover {
             background-color: lightgreen; /* JEG GRØNNER DEN */
             color: black;
