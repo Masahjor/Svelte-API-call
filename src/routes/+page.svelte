@@ -77,5 +77,11 @@
             color: black;
         }
     }
+
+    :global(h2) {
+        font-size: 1.5rem;
+        color: darkgreen;
+        margin: 0.5rem 0;
+    }
   }
  </style>

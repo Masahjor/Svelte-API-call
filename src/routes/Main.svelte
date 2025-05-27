@@ -1,37 +1,50 @@
 <!-- ===== Script ===== -->
 <script lang="ts">
-    const getKittens = async()=> {
-        const res = await fetch('https://api.thecatapi.com/v1/images/search?limit=10');
+    let kittens: Array<{ url: string; id: string }> = [];
+
+    const getKittens = async () => {
+        kittens = [];
+        const res = await fetch('https://api.thecatapi.com/v1/images/search?limit=3');
         const kittenJson = await res.json();
-        console.log(kittenJson);
+        console.log('Kittens API response:', kittenJson);
+        kittens = kittenJson.slice(0, 3);
     }
 </script>
 
 <!-- ===== HTML ===== -->
-    <div class="grid-container">
-        <div class="grid-item" style="grid-column: span 3;">
-            <p>Welcome to SvelteKit, visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-            <h1>API get missekat</h1>
-            <button on:click={getKittens}>Get missekat, check console</button>
-        </div>
-        <div class="grid-item" style="grid-column: span 3;">
-            <img src="AlexLogo.png" alt="img">
-        </div>
-
-        <div class="grid-item">
-            <h2>Item 1</h2>
-            <p>Content for item 1</p>
-        </div>
-
-        <div class="grid-item">
-            <h2>Item 2</h2>
-            <p>Content for item 2</p>
-        </div>
-
-        <div class="grid-item">
-            <h2>Item 3</h2>
-            <p>Content for item 3</p>
-        </div>
+<div class="grid-container">
+    <div class="grid-item" style="grid-column: span 3;">
+        <h2>Welcome to SvelteKit, visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</h2>
+        <h1>API get missekat</h1>
+        <button on:click={getKittens}>Get missekat</button>
     </div>
+
+    <div class="grid-item" style="grid-column: span 3;">
+        <img src="AlexLogo.png" alt="img">
+    </div>
+
+    <!-- Show kittens here -->
+    {#each kittens as kitten}
+        <div class="grid-item">
+            <img src={kitten.url} alt="kitten" style="max-width:100%;max-height:100%;">
+            <h2>{kitten.id}</h2>
+        </div>
+    {/each}
+
+    <div class="grid-item">
+        <h2>Item 1</h2>
+        <p>Content for item 1</p>
+    </div>
+
+    <div class="grid-item">
+        <h2>Item 2</h2>
+        <p>Content for item 2</p>
+    </div>
+
+    <div class="grid-item">
+        <h2>Item 3</h2>
+        <p>Content for item 3</p>
+    </div>
+</div>
 
 <!-- ===== End of code ===== -->
