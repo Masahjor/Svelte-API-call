@@ -37,7 +37,7 @@
 
     :global(.grid-container) {
         display: grid;
-        background: lightgreen;
+        background: white;
         grid-template-columns: repeat(3, 1fr); /* Two columns */
         gap: 1rem; /* Adjust gap as needed */
         width: 1000px; /* Full width */
@@ -45,7 +45,7 @@
     }
 
     :global(.grid-item) {
-        background-color: #f0f0f0; /* Example background color */
+        background-color: hotpink; /* Example background color */
         padding: 1rem;
         text-align: center;/* border: 1px solid green; */ /* Example border */
         font-family: Verdana, Geneva, Tahoma, sans-serif;

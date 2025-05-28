@@ -1,9 +1,9 @@
 <!-- ===== Script ===== -->
  <script lang="ts">
     let sections = [
-        { name: "Section 1", path: "/" },
-        { name: "Section 2", path: "/content2" },
-        { name: "Section 3", path: "/content3" }
+        { name: "Kittens", path: "/" },
+        { name: "Doggies", path: "/content2" },
+        { name: "Weather", path: "/content3" }
     ];
  </script>
 

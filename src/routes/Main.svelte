@@ -31,20 +31,6 @@
         </div>
     {/each}
 
-    <div class="grid-item">
-        <h2>Item 1</h2>
-        <p>Content for item 1</p>
-    </div>
-
-    <div class="grid-item">
-        <h2>Item 2</h2>
-        <p>Content for item 2</p>
-    </div>
-
-    <div class="grid-item">
-        <h2>Item 3</h2>
-        <p>Content for item 3</p>
-    </div>
 </div>
 
 <!-- ===== End of code ===== -->
