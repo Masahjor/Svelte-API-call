@@ -66,6 +66,8 @@
                         height="48"
                     />
                 </p>
+                <p>Wind speed: {weather.wind.speed} m/s</p>
+                <p>Air humidity: {weather.main.humidity}%</p>
             </div>
         {/if}
     </div>

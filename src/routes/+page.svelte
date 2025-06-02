@@ -45,7 +45,7 @@
     }
 
     :global(.grid-item) {
-        background-color: hotpink; /* Example background color */
+        background-color: lightskyblue; /* Example background color */
         padding: 1rem;
         text-align: center;/* border: 1px solid green; */ /* Example border */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
