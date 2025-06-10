@@ -31,6 +31,10 @@
         </div>
     {/each}
 
+<div class="grid-item item-invisible" style="grid-column: span 3;">
+    <p>Secret text :)</p>
+</div>
+
 </div>
 
 <!-- ===== End of code ===== -->

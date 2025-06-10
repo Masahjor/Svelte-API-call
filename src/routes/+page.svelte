@@ -32,7 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 1000px; /* Full viewport height */
+        height: auto; /* Full viewport height */
     }
 
     :global(.grid-container) {
@@ -42,10 +42,11 @@
         gap: 1rem; /* Adjust gap as needed */
         width: 1000px; /* Full width */
         height: 100%; /* Full height */
+        padding-top: 15px;
     }
 
     :global(.grid-item) {
-        background-color: lightskyblue; /* Example background color */
+        background-color: lightgreen; /* Example background color */
         padding: 1rem;
         text-align: center;/* border: 1px solid green; */ /* Example border */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,15 +74,32 @@
         border-radius: 5px;
         
         &:hover {
-            background-color: lightgreen; /* JEG GRØNNER DEN */
+            background-color: yellow; /* JEG GRØNNER DEN */
+            /* get pranked den er faktisk hul lol */
             color: black;
         }
     }
+  }
 
-    :global(h2) {
+      :global(h2) {
         font-size: 1.5rem;
         color: darkgreen;
         margin: 0.5rem 0;
     }
+
+        :global(h3) {
+        font-size: 1.3rem;
+        color: white;
+        background-color: darkgreen;
+        padding: 3px 3px;
+        border-radius: 5px;
+        margin: 0.3rem 0;
+    }
+
+  :global(.item-invisible) {
+    background-color: rgba(185, 230, 117, 0);
+    color: rgba(185, 230, 117, 0);
+    border: none;
+    min-height: 120px;
   }
  </style>
